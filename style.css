@@ -1,0 +1,177 @@
+#img-map {
+  width: 1200px;
+  height: 600px;
+}
+
+#wrap-zoom {
+  cursor: move;
+  position: relative;
+  width: 1200px;
+  height: 600px;
+}
+
+#zoom-container {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.map__pin {
+  position: absolute;
+  width: 36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.map__img-pin {
+  width: 36px;
+}
+.map__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.map__wrap-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 640px;
+  margin: auto;
+  padding: 0 100px;
+}
+.map__img-popup {
+  width: 100%;
+  min-width: 440px;
+  min-height: 230px;
+}
+.map__wrap-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  max-width: 440px;
+  max-height: 230px;
+  overflow: hidden;
+}
+.body__pop-out {
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+}
+
+.map__btn-zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #470063;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.map__btn-zoom_in {
+  right: 60px;
+}
+
+.map__btn-zoom_out {
+  right: 10px;
+}
+
+.map__wrap-selection {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.map__selection {
+  padding: 10px 25px;
+  background-color: #590955;
+  color: #fff;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-out;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.map__selection:hover {
+  transform: scale(1.05);
+}
+
+.map__active-selection {
+  background: #590955;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 3px rgb(61, 2, 99, 0.45);
+}
+
+#map-drop {
+  background: #590955;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+.map__wrap-object-list {
+  width: 20%;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+.map__list-item {
+  cursor: pointer;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.map__pin-num {
+  position: absolute;
+  top: 5%;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.map__pin_selected {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.map__txt-not-available {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #1a1b1f;
+    background-color: #ff7f00;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 991px) {
+  .map__wrap-popup {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .map__wrap-popup {
+    padding: 0 20px;
+  }
+}
