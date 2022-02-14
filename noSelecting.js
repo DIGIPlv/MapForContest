@@ -23,7 +23,7 @@ if(correctWidth > screen.height)
 // Portrait screens
 else
 {
- document.getElementById('img-map').src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/60113ab951945115c51a2cbc_Map_more_area_vertical.png';
+ document.getElementById('img-map').src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e5d84e15fd1_Map_more_area_vertical.png';
  if((correctWidth - 60) * 2 < screen.height)
  {
    document.getElementById('zoom-container').style.width = correctWidth - 60 + 'px';
@@ -265,7 +265,7 @@ function putPins ()
  {
      let pin = document.createElement('div');
      let pinImg = document.createElement('img');
-     pinImg.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c0dc56fafeee89bb0_ff7f00%20.svg';
+     pinImg.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e2021e160a8_ff7f00%20.svg';
      pinImg.className = 'map__img-pin';
      pin.className = 'map__pin';
      pin.id = 'pin_' + i;
