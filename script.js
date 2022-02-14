@@ -15,7 +15,7 @@ if(window.innerWidth > window.innerHeight)
 // Portrait screens
 else
 {
- document.getElementById('img-map').src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/60113ab951945115c51a2cbc_Map_more_area_vertical.png';
+ document.getElementById('img-map').src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e5d84e15fd1_Map_more_area_vertical.png';
  if((window.innerWidth - 60) * 2 < window.innerHeight)
  {
    document.getElementById('zoom-container').style.width = window.innerWidth - 60 + 'px';
@@ -273,7 +273,7 @@ function putPins ()
    {
      let pin = document.createElement('div');
      let pinImg = document.createElement('img');
-     pinImg.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c0dc56fafeee89bb0_ff7f00%20.svg';
+     pinImg.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e2021e160a8_ff7f00%20.svg';
      pinImg.className = 'map__img-pin';
      pin.className = 'map__pin';
      pin.id = 'pin_' + i;
@@ -295,7 +295,7 @@ function putPins ()
    {
      let pin = document.createElement('div');
      let pinImg = document.createElement('img');
-     pinImg.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c428c760347dd1bdd_2a2d34.svg';
+     pinImg.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e9cc1e160a1_2a2d34.svg';
      pinImg.className = 'map__img-pin';
      pin.className = 'map__pin map__pin_disabled';
      pin.id = 'pin_' + i;
@@ -376,12 +376,12 @@ function createPopup(id)
          if(selectedPin != '')
          {
            document.getElementById(selectedPin).classList.remove('map__pin_selected');
-           document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c0dc56fafeee89bb0_ff7f00%20.svg';
+           document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e2021e160a8_ff7f00%20.svg';
          }
          selectedPin = id;
          selectedPin = 'pin_' + selectedPin;
          document.getElementById(selectedPin).classList.add('map__pin_selected');
-         document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c03e67d4d4b8099a6_470063.svg';
+         document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e5db8e1609e_470063.svg';
          break;
        }
        j++;
@@ -399,12 +399,12 @@ function createPopup(id)
          if(selectedPin != '')
          {
            document.getElementById(selectedPin).classList.remove('map__pin_selected');
-           document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c0dc56fafeee89bb0_ff7f00%20.svg';
+           document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e2021e160a8_ff7f00%20.svg';
          }
          selectedPin = id;
          selectedPin = 'pin_' + selectedPin;
          document.getElementById(selectedPin).classList.add('map__pin_selected');
-         document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c03e67d4d4b8099a6_470063.svg';
+         document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e5db8e1609e_470063.svg';
          break;
        }
        i++;
@@ -461,7 +461,7 @@ for(let i = 0; i < pins.length; i++)
   if(selectedPin != '')
   {
     document.getElementById(selectedPin).classList.remove('map__pin_selected');
-    document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c0dc56fafeee89bb0_ff7f00%20.svg';
+    document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e2021e160a8_ff7f00%20.svg';
   }
   let a = 0;
   while(a < mapInfo.length)
@@ -476,5 +476,5 @@ for(let i = 0; i < pins.length; i++)
   }
   selectedPin = 'pin_' + selectedPin;
   document.getElementById(selectedPin).classList.add('map__pin_selected');
-  document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6037e22c03e67d4d4b8099a6_470063.svg';
+  document.getElementById(selectedPin).firstChild.src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e5db8e1609e_470063.svg';
 });
